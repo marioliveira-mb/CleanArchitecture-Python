@@ -39,7 +39,7 @@ class UserFinder(UserFinderInterface):
         response = {
             "type": "Users",
             "count": len(users),
-            "attributes": users
+            "attributes": attributes
         }
 
         return response
