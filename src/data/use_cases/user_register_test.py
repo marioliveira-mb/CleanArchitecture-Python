@@ -30,7 +30,7 @@ def test_register_error_name_with_number():
     try:
         user_register.register(first_name, last_name, age)
     except Exception as e:
-        assert str(e) == "Nome inválido para busca"
+        assert str(e) == "Nome inválido para o cadastro"
 
 
 def test_register_error_in_long_name():
@@ -46,4 +46,4 @@ def test_register_error_in_long_name():
     try:
         user_register.register(first_name, last_name, age)
     except Exception as e:
-        assert str(e) == "Nome muito grande para busca"
+        assert str(e) == "Nome muito grande para o cadastro"
